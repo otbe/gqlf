@@ -1,7 +1,7 @@
 {
   "name": "gqlf",
   "version": "1.0.0",
-  "description": "Simple file explorer exposed via graphql",
+  "description": "Simple File Explorer exposed via GraphQL",
   "bin": "bin/gqlf.js",
   "scripts": {
     "start": "ts-node src/index.ts",
