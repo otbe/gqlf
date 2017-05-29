@@ -2,7 +2,7 @@ import { ArgumentParser } from 'argparse';
 import { startServer } from './Server';
 
 const parser = new ArgumentParser({
-  version: '1.0.0',
+  version: require('../package.json').version,
   addHelp: true,
   description: 'GraphQL based File Explorer'
 });
@@ -10,7 +10,7 @@ const parser = new ArgumentParser({
 parser.addArgument(
   ['-p', '--port'],
   {
-    help: 'Defines the express port which the server listens on',
+    help: 'Defines the express port which the server listens on (default 4000)',
     defaultValue: 4000
   }
 );
